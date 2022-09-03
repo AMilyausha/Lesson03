@@ -1,18 +1,11 @@
-﻿Console.WriteLine("Введите пятизначное число");
-int n =int.Parse(Console.ReadLine());
-int a1 = n/10000; // первая цифра
-Console.WriteLine(a1);
-int a2 = (n%100) %10; // пятая цифра
-Console.WriteLine(a2);
-int b1 = (n/1000)%10; // вторая цифра
-Console.WriteLine(b1);
-int b2 = (n%100) /10; // четвертая цифра
-Console.WriteLine(b2);
-if ((a1==a2) && (b1==b2))
+﻿Console.WriteLine("Введите число a:");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число b:");
+int b = Convert.ToInt32(Console.ReadLine());
+int n=a;
+for (int i=1;i<b;i++)
 {
-   Console.WriteLine("Число является палиндромом.");
+    n = n*a;
 }
-else
-{
-    Console.WriteLine("Число не является палиндромом.");
-}
+ Console.WriteLine(n);
+
