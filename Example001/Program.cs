@@ -8,4 +8,3 @@ for (int i=1;i<b;i++)
     n = n*a;
 }
  Console.WriteLine(n);
-
